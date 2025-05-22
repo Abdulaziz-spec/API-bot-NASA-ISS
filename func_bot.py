@@ -11,7 +11,6 @@ def get_apod_photo_info(api_key):
 
 
 def get_random_space_fact(api_key):
-    # Локальные факты
     local_facts = [
         "1. Космос — это почти полная пустота. Между звездами и планетами находятся огромные пустые пространства, в которых почти нет частиц материи. Это объясняет, почему космос часто называют 'вакуумом'.",
         "2. Свет от Солнца достигает Земли за 8 минут. Несмотря на огромное расстояние в 150 миллионов километров, свет от Солнца достигает Земли всего за 8 минут и 20 секунд.",
@@ -55,7 +54,7 @@ def get_random_space_fact(api_key):
         "40.Чёрные дыры искривляют пространство и время."
     ]
 
-    # Пробуем получить факт из NASA
+
     try:
         url = f'https://api.nasa.gov/planetary/apod?api_key={api_key}'
         response = requests.get(url)
@@ -66,7 +65,7 @@ def get_random_space_fact(api_key):
         sources = [full_nasa_fact, *local_facts]
     except Exception as e:
         print(f"[NASA API ERROR]: {e}")
-        sources = local_facts  # fallback только на локальные
+        sources = local_facts  
 
     return random.choice(sources)
 

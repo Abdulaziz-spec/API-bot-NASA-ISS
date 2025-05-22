@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 beautifulsoup4~=4.13.4
 soupsieve~=2.7
 pip~=22.2.1
@@ -8,3 +9,15 @@ idna~=3.10
 wikipedia~=1.4.0
 setuptools~=63.2.0
 countryinfo~=0.1.2
+=======
+beautifulsoup4~=4.13.4
+soupsieve~=2.7
+pip~=22.2.1
+certifi~=2025.4.26
+requests~=2.32.3
+urllib3~=2.4.0
+idna~=3.10
+wikipedia~=1.4.0
+setuptools~=63.2.0
+countryinfo~=0.1.2
+>>>>>>> afed1c943de17f0774e0688fae40cafb05064349

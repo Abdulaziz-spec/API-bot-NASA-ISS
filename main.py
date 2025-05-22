@@ -48,7 +48,6 @@ def send_space_fact(message: Message):
     try:
         fact = get_random_space_fact(NASA_API)
 
-        # Telegram не позволяет более 4096 символов, но в подписи фото — максимум 1024
         if len(fact) > 4000:
             fact = fact[:3997] + "..."
 
